@@ -6,7 +6,7 @@
 	<string>com.xinle.Appserver.LaunchAgents</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/Shared/FindAppServerLaunchAgents</string>
+		<string>/Users/Shared/AppServerLaunchdAgents</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

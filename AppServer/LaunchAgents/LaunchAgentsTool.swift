@@ -33,6 +33,13 @@ class LaunchAgentsTool: NSObject {
             process.launchPath = "/bin/bash"
             process.arguments = ["-c", "echo \(macbookPwd) | sudo -S cp \(launchAgentsPlistBundlePath) \(launchAgentsPath)"]
             process.launch()
+            
+//          如果开机启动 没起作用 则打开注释
+//            let process1 = Process()
+//            process1.launchPath = "/bin/bash"
+//            process1.arguments = ["-c", "echo \(macbookPwd) | sudo -S launchctl load \(launchAgentsPath.appending("/\(plistName)"))"]
+//            process1.launch()
+            
         }
         if !FileManager.default.fileExists(atPath: sharePath.appending("/\(executableFileName)")) { // 不存在
             let process = Process()
